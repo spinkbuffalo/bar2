@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #ffd700;
+    --text-color: #ffffff;
+    --bg-color: #1a1a1a;
+    --accent-red: #ff0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkE3MTY1RTU5RTY1MTFFQTk0QUVBRkQ5QjgxMDVDOTgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkE3MTY1RTY5RTY1MTFFQTk0QUVBRkQ5QjgxMDVDOTgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGQTcxNjVFMzlFNjUxMUVBOTRBRUFGRDlCODEwNUM5OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGQTcxNjVFNDlFNjUxMUVBOTRBRUFGRDlCODEwNUM5OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjQ0mkwAAAAkSURBVHjaYvz//z8DEwMDAxMDBAA5jGAGEwMUQAX/M0KYAAEGABzKBP3NoWYtAAAAAElFTkSuQmCC');
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 4px;
+}
+
+nav {
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+section {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.category {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.menu-item::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.name {
+    background-color: var(--bg-color);
+    padding-right: 5px;
+    z-index: 2;
+}
+
+.price {
+    background-color: var(--bg-color);
+    padding-left: 5px;
+    color: var(--primary-color);
+    z-index: 2;
+}
+
+.volume {
+    color: #888;
+    font-size: 0.9em;
+    margin-right: 1rem;
+}
+
+.ingredients {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.cocktail {
+    flex-direction: column;
+}
+
+.cocktail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Blood splatter effect */
+section::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 50%;
+    transform: scale(0.8);
+    opacity: 0.5;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .cocktail-header {
+        flex-wrap: wrap;
+    }
+}
